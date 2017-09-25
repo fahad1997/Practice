@@ -14,7 +14,7 @@ int main()
     //Enter the values of B
     printf("Enter hew many elements you want for B:");
     scanf("%d",&m);
-    prinf("Enter the elements:");
+    printf("Enter the elements:");
     for(j=0;j<m;j++)
     {
        scanf("%d",&b[j]);
