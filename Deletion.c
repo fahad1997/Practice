@@ -13,11 +13,12 @@ int main()
     printf("which number you want to delete:");
     scanf("%d",&m);
 
-    for(i=0;i<n-1;i++)
+    for(i=0;i<n;i++)
     {
         if(a[i]==m)
         {
             k=i;
+            n--;
             break;
         }
     }
@@ -26,10 +27,6 @@ int main()
     {
         printf("The data is not found...\n");
 
-        for(i=0;i<n;i++)
-         {
-           printf("%d\t",a[i]);
-         }
     }
     else
     {
@@ -37,11 +34,11 @@ int main()
           {
             a[i]=a[i+1];
           }
+    }
 
-        for(i=0;i<n-1;i++)
-          {
-            printf("%d\t",a[i]);
-          }
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",a[i]);
     }
 
     return 0;
